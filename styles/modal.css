@@ -1,0 +1,47 @@
+/* MODAL ===================*/
+.modal-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal{
+  background: var(--color-ice);
+  padding: 2.4rem;
+
+  border-radius: 0.4rem;
+
+  width: 90%;
+  max-width: 500px;
+}
+/* MODAL TRANSACTION ADDED ===================*/
+.modal.highest {
+  padding: .8rem;
+  position: absolute;
+  top: 3.2rem;
+}
+.modal-button{
+  text-align: right;
+}
+.modal-button button{
+  width: auto;
+  height: auto;
+  padding: .3rem;
+}
+.modal-button h2{
+  margin-top: .8rem;
+  text-align: center;
+}

@@ -1,0 +1,125 @@
+/* GLOBAL ===================*/
+:root{
+  --color-darkblue: #363f5f;
+  --color-ice: #f0f2f5;
+  --color-green: #49aa26;
+  --color-light-green: #3dd705;
+  --color-red: #e92929;
+}
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+html{
+  font-size: 93.75%; /* 100% = 16px, logo, 6.25% = 1px */
+}
+body{
+  background: var(--color-ice);
+  font-family: Poppins, sans-serif;
+}
+.container{
+  width: min(90vw, 800px);
+  margin: auto;
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0,0,0,0);
+  border-width: 0;
+}
+/* TITLES ===================*/
+h2{
+  color: var(--color-darkblue);
+
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+
+  font-weight: normal;
+}
+/* LINKS AND BUTTONS ===================*/
+a{
+  color: var(--color-green);
+  text-decoration: none;
+
+  transition: color 200ms;
+}
+a:hover{
+  color: var(--color-light-green);
+}
+button{
+  width: 100%;
+  height: 50px;
+
+  border: 0;
+  border-radius: 0.25rem;
+
+  color: white;
+  background: var(--color-green);
+
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: background 200ms;
+}
+button:hover{
+  background: var(--color-light-green);
+}
+.button.new{
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+.button.cancel{
+  border: 2px var(--color-red) solid;
+  border-radius: 0.25rem;
+  color: var(--color-red);
+
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: .6;
+
+  transition: opacity 200ms;
+}
+.button.cancel:hover{
+  opacity: 1;
+}
+/* HEADER ===================*/
+header{
+  background-color: #2d4a22;
+  padding: 2rem 0 10rem;
+  
+  text-align: center;
+}
+header #logo{
+  color: #fff;
+  font-weight: 100;
+}
+
+/* FOOTER ===================*/
+footer{
+  text-align: center;
+
+  padding: 4rem 0 2rem;
+  color: var(--color-darkblue);
+  opacity: 0.6;
+}
+/* RESPONSIVE ===================*/
+@media(min-width: 800px){
+  html{
+    font-size: 87.5%;
+  }
+  #balance{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+  }
+}

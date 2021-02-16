@@ -15,7 +15,7 @@ const Transaction = {
     App.reload()
   },
   areYouSure(index){
-     const message = `<button onclick="Modal.handleAddedModal()"><img src="./assets/close.svg" alt="Fechar"><h2 class="sr-only">Fechar</h2></button><h2 style="text-align: left;">O(a) senhor(a) tem certeza que gostaria de excluir a transação?</h2><a href="#" class="button cancel" onclick="Transaction.remove(${index})">Sim, desejo excluir a transação permanentemente.</a>`
+     const message = `<button onclick="Modal.handleAddedModal()"><img src="../assets/close.svg" alt="Fechar"><h2 class="sr-only">Fechar</h2></button><h2 style="text-align: left;">O(a) senhor(a) tem certeza que gostaria de excluir a transação?</h2><a href="#" class="button cancel" onclick="Transaction.remove(${index})">Sim, desejo excluir a transação permanentemente.</a>`
     
     const modal = Modal.createModal(message)
     
@@ -72,7 +72,7 @@ const DOM = {
     <td class="date">${transaction.date}</td>
     <td class="category">${transaction.category}</td>
     <td class="remove">
-    <img onclick="Transaction.areYouSure(${index})" src="./assets/minus.svg" alt="Remover Transação"
+    <img onclick="Transaction.areYouSure(${index})" src="../assets/minus.svg" alt="Remover Transação"
     </td>
       `
     return html
@@ -141,14 +141,6 @@ const Utils = {
       currency: "BRL"
     })
     return signal + value
-  },
-  buttonValue(button){
-    if(button.value == 0){
-      return "Não"
-    }
-    if(button.value == 1){
-      return "Sim"
-    }
   }
 }
 
@@ -188,7 +180,7 @@ const Form = {
     }
   },
   transactionAdded() {
-    const message = `<button onclick="Modal.handleAddedModal()"><img src="./assets/close.svg" alt="Fechar"><h2 class="sr-only">Fechar</h2></button><h2>Transação adicionada com sucesso!</h2>`
+    const message = `<button onclick="Modal.handleAddedModal()"><img src="../assets/close.svg" alt="Fechar"><h2 class="sr-only">Fechar</h2></button><h2>Transação adicionada com sucesso!</h2>`
     Modal.createModal(message)
   },
   saveTransaction(transaction) {

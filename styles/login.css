@@ -1,0 +1,53 @@
+/* FORM ===================*/
+#login-form{
+  margin-top: -8rem;
+  background-color: var(--color-lemon);
+
+  width: 70%;
+  max-width: 500px;
+  margin: -8rem auto auto auto;
+  border-radius: 0.3rem;
+
+  padding: .8rem;
+}
+#login-form h2{
+  margin: 0;
+}
+input{
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  padding: .8rem;
+}
+.input-group{
+  margin-top: .8rem;
+}
+.input-group small{
+  opacity: .5; 
+  margin: 1.6rem 0;
+  display: block;
+}
+.input-group.actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-group.actions a{
+  width: 80%;
+  margin: auto;
+
+  background-color: var(--color-light-green);
+  border-radius: 0.3rem;
+  color: white;
+
+  text-align: center;
+  padding: .8rem;
+}
+.input-group.actions a:hover{
+  background-color: var(--color-green);
+}
+/* FOOTER =================== */
+footer{
+  margin-top: 32rem;
+}
+

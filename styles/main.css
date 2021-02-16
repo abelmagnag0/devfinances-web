@@ -5,6 +5,7 @@
   --color-green: #49aa26;
   --color-light-green: #3dd705;
   --color-red: #e92929;
+  --color-lemon: #BFE0AF;
 }
 *{
   margin: 0; padding: 0; box-sizing: border-box;
@@ -91,6 +92,7 @@ button:hover{
 .button.cancel:hover{
   opacity: 1;
 }
+
 /* HEADER ===================*/
 header{
   background-color: #2d4a22;

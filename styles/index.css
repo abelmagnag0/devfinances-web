@@ -3,9 +3,7 @@ body{
 }
 /* HEADER ===================*/
 header{
-  padding: 2rem 2rem;
-  position: fixed;
-  width: 100vw;
+  display: none;
 }
 nav{
   max-width: 80vw;
@@ -35,41 +33,115 @@ nav ul{
 /* SECTION ===================*/
 .container{
   width: 100vw;
-  height: auto;
+  height: 100vh;
   background-color: var(--color-lemon);
 }
-.main-content{
-  margin: auto;
-  height: auto;
+#mobile-container{
   width: 100vw;
+  height: 100vh;
+  background-color: var(--color-lemon);
 
-  overflow: hidden;
-}
-.main-content img{
-  margin-top: 5rem;
-  max-width: 100vw;
-  height: auto;
-}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+  padding: 4rem;
+}
+#mobile-container .logo-title{
+  display: flex;
+  flex-direction: column;
+}
+#mobile-container .logo-title h3{
+  color: var(--color-dark-green);
+  font-weight: normal;
+  margin-top: .8rem;
+}
+#mobile-container .buttons{
+  width: 100%;
+  max-width: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: -8rem;
+}
+.button{
+  width: 48%;
+  color: var(--color-ice);
+  text-align: center;
+
+  background-color: var(--color-green);
+  padding: 1.6rem 2rem;
+  border-radius: 0.3rem;
+}
+.button:hover{
+  color: var(--color-ice);
+  font-weight: bold;
+  background-color: var(--color-light-green)
+}
+.button-2{
+  width: 48%;
+  background-color: var(--color-ice);
+  opacity: .7;
+  text-align: center;
+  color: var(--color-darkblue);
+  padding: 1.6rem 2rem;
+  border-radius: 0.3rem;
+}
+.button-2:hover{
+  opacity: 1;
+  color: var(--color-darkblue);
+}
+#desktop-container{
+  display: none;
+}
 /* FOOTER ===================*/
 footer{
-  margin-top: 12rem;
+  display: none;
 }
 footer a{
   color: black;
 }
 /* RESPONSIVE ===================*/
 @media(min-width: 900px){
+  header{
+    display: block;
+
+    padding: 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
   img{
     overflow: hidden;
   }
   .pipe{
     display: block;
   }
-  .main-content.title{
+  .container{
+    height: auto;
+  }
+  #desktop-container{
+    display: block;
+
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+  }
+  #desktop-container img{
+    margin-top: 5rem;
+    max-width: 100vw;
+    height: auto;
+  }
+  #mobile-container{
     display: none;
   }
   footer{
+    display: block;
     margin-top: -2rem;
   }
 }

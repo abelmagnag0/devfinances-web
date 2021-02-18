@@ -6,6 +6,7 @@
   --color-light-green: #3dd705;
   --color-red: #e92929;
   --color-lemon: #BFE0AF;
+  --color-dark-green: #2d4a22;
 }
 *{
   margin: 0; padding: 0; box-sizing: border-box;
@@ -95,7 +96,7 @@ button:hover{
 
 /* HEADER ===================*/
 header{
-  background-color: #2d4a22;
+  background-color: var(--color-dark-green);
   padding: 2rem 0 10rem;
   
   text-align: center;

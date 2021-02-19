@@ -105,7 +105,7 @@ footer a{
   color: black;
 }
 /* RESPONSIVE ===================*/
-@media(min-width: 900px){
+@media(min-width: 1200px){
   header{
     display: block;
 
@@ -145,3 +145,4 @@ footer a{
     margin-top: -2rem;
   }
 }
+@media(max-width: 1)
